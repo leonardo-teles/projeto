@@ -10,7 +10,14 @@
     </h:head>
 	
     <h:body>
-       Seja bem-vindo!
+       Seja bem-vindo!<br/>
+       
+       <h:form>
+       		<h:panelGrid columns="1">
+       			<h:commandLink value="Grupos" action="#{grupoMB.listar}"/>
+       		</h:panelGrid>
+       </h:form>
+       
     </h:body>
 	
 </html>
