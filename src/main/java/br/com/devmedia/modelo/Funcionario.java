@@ -32,7 +32,7 @@ public class Funcionario implements Serializable {
 	private Long id;
 	
 	@NotEmpty(message = "O nome não pode ser nulo")
-	@Size(max = 50, message = "O nome não pode ultrapassar {max} caracteres")
+	@Size(max = 50, message = "O nome não deve ultrapassar {max} caracteres")
 	private String nome;
 	
 	@CPF(message = "Informe um CPF válido")
@@ -54,7 +54,7 @@ public class Funcionario implements Serializable {
 	@Past(message = "A data de nascimento não pode estar no futuro")
 	private LocalDate nascimento;
 	
-	@NotNull(message = "O campo ativo deve ser informado")
+	@NotNull(message = "O status do funcionário deve ser informado")
 	private Boolean ativo;
 	
 	@Lob

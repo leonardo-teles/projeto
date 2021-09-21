@@ -21,7 +21,7 @@ public class Setor implements Serializable {
 	private Long id;
 	
 	@NotEmpty(message = "O nome deve ser informado")
-	@Size(max = 50, message = "O nome não pode ultrapassar {max} caracteres")
+	@Size(max = 50, message = "O nome não deve ultrapassar {max} caracteres")
 	private String nome;
 
 	public Setor() {}
