@@ -12,8 +12,8 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "grupos")
-public class Grupo implements Serializable {
+@Table(name = "setores")
+public class Setor implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -24,7 +24,7 @@ public class Grupo implements Serializable {
 	@Size(max = 50, message = "O nome não pode ultrapassar {max} caracteres")
 	private String nome;
 
-	public Grupo() {}
+	public Setor() {}
 
 	public Long getId() {
 		return id;
@@ -55,7 +55,7 @@ public class Grupo implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Grupo other = (Grupo) obj;
+		Setor other = (Setor) obj;
 		return Objects.equals(id, other.id);
 	}
 }
